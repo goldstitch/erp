@@ -1,0 +1,987 @@
+<!doctype html>
+<html>
+<!-- Mirrored from www.eakroko.de/flat/forms-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 Aug 2014 06:41:48 GMT -->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<!-- Apple devices fullscreen -->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<!-- Apple devices fullscreen -->
+	<meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<title>Sale Voucher</title>
+	<link rel="icon" href="img/logo.png" type="image/gif" sizes="16x16">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- jQuery UI -->
+	<link rel="stylesheet" href="css/plugins/jquery-ui/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="css/plugins/jquery-ui/smoothness/jquery.ui.theme.css">
+	<!-- dataTables -->
+	<link rel="stylesheet" href="css/plugins/datatable/TableTools.css">
+	<link rel="stylesheet" href="css/plugins/datepicker/datepicker.css">
+	<!-- Daterangepicker -->
+	<link rel="stylesheet" href="css/plugins/daterangepicker/daterangepicker.css">
+	<link rel="stylesheet" href="css/plugins/select2/select2.css">
+	<!-- chosen -->
+	<link rel="stylesheet" href="css/plugins/chosen/chosen.css">
+	<!-- Theme CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Color CSS -->
+	<link rel="stylesheet" href="css/themes.css">
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- Nice Scroll -->
+	<script src="js/plugins/nicescroll/jquery.nicescroll.min.js"></script>
+	<!-- imagesLoaded -->
+	<script src="js/plugins/imagesLoaded/jquery.imagesloaded.min.js"></script>
+	<!-- jQuery UI -->
+	<script src="js/plugins/jquery-ui/jquery.ui.core.min.js"></script>
+	<script src="js/plugins/jquery-ui/jquery.ui.widget.min.js"></script>
+	<script src="js/plugins/jquery-ui/jquery.ui.mouse.min.js"></script>
+	<script src="js/plugins/jquery-ui/jquery.ui.resizable.min.js"></script>
+	<script src="js/plugins/jquery-ui/jquery.ui.sortable.min.js"></script>
+	<script src="js/plugins/select2/select2.min.js"></script>
+	<script src="js/plugins/jquery-ui/jquery.ui.datepicker.min.js"></script>
+	<!-- slimScroll -->
+	<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Bootbox -->
+	<script src="js/plugins/bootbox/jquery.bootbox.js"></script>
+	<script src="js/plugins/datepicker/bootstrap-datepicker.js"></script>
+	<!-- Daterangepicker -->
+	<script src="js/plugins/daterangepicker/moment.min.js"></script>
+	<script src="js/plugins/daterangepicker/daterangepicker.js"></script>
+	<!-- dataTables -->
+	<script src="js/plugins/datatable/jquery.dataTables.min.js"></script>
+	<script src="js/plugins/datatable/TableTools.min.js"></script>
+	<script src="js/plugins/datatable/ColReorderWithResize.js"></script>
+	<script src="js/plugins/datatable/ColVis.min.js"></script>
+	<script src="js/plugins/datatable/jquery.dataTables.columnFilter.js"></script>
+	<script src="js/plugins/datatable/jquery.dataTables.grouping.js"></script>
+	<!-- Chosen -->
+	<script src="js/plugins/chosen/chosen.jquery.min.js"></script>
+	<!-- Theme framework -->
+	<script src="js/eakroko.min.js"></script>
+	<!-- Theme scripts -->
+	<script src="js/application.min.js"></script>
+	<!-- Just for demonstration -->
+	<script src="js/demonstration.min.js"></script>
+	<script src="js/script.js"></script>
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="img/favicon.css" />
+	<!-- Apple devices Homescreen icon -->
+	<link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-precomposed.css" />
+</head>
+<body>
+		<div id="navigation">
+		<div class="container-fluid">
+			<a href="#" id="brand">Rahi Socks</a>
+			<ul class='main-nav'>
+				<li class="active">
+					<a href="index.php"><i class="fa fa-home"></i> Home</a>
+				</li>
+				<li>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span><i class="fa fa-gear"></i> Setup</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="charts-of-account.php">Define Account</a>
+						</li>
+						<li>
+							<a href="add-new-product.php">Define Product</a>
+						</li>
+						<li>
+							<a href="add-new-raw-material.php">Define Raw Material</a>
+						</li>
+						<li>
+							<a href="add-new-machine.php">Define Machine</a>
+						</li>
+						<li>
+							<a href="add-new-color.php">Define Colours</a>
+						</li>
+						<li>
+							<a href="add-new-phase.php">Define Production Phase</a>
+						</li>
+						<li>
+							<a href="add-new-department.php">Define Department</a>
+						</li>
+						<li>
+							<a href="ratio-voucher.php">Ratio Voucher</a>
+						</li>
+						<li>
+							<a href="add-packing-receipt-voucher.php">Add Packing Receipt</a>
+						</li>
+						<li>
+							<a href="add-step-costing-rate-voucher.php">Add Steps Costing Rate</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span><i class="fa fa-inbox"></i> Voucher</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li class='dropdown-submenu'>
+							<a href='#'>Sale Vouchers</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="sale-voucher.php">Sale Voucher</a>
+								</li>
+								<li>
+									<a href="sale-return-voucher.php">Sale Return Voucher</a>
+								</li>
+							</ul>
+						</li>
+						<li class='dropdown-submenu'>
+							<a href='#'>Purchase Vouchers</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="purchase-yarn-voucher.php">Purchase Yarn Voucher</a>
+								</li>
+								<li>
+									<a href="purchase-return-yarn-voucher.php">Purchase Return Yarn Voucher</a>
+								</li>
+								<li>
+									<a href="purchase-raw-material-voucher.php">Purchase Raw Material</a>
+								</li>
+								<li>
+									<a href="purchase-return-raw-material-voucher.php">Purchase Return Raw Material</a>
+								</li>
+							</ul>
+						</li>
+						<li class='dropdown-submenu'>
+							<a href="opening-stock-voucher.html">Yarn Voucher</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="yarn-sale-voucher.php">Yarn Sale Voucher</a>
+								</li>
+								<li>
+									<a href="yar-issue-to dying-voucher.php">Yarn Issue To Dyeing Voucher</a>
+								</li>
+								<li>
+									<a href="yarn-receive-from-dyeing-voucher.php">Yarn Receiving From Dyeing</a>
+								</li>
+							</ul>
+						</li>
+						<li class='dropdown-submenu'>
+							<a href="#">Knitting Voucher</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="knitting-production-voucher.php">Knitting Production Voucher</a>
+								</li>
+								<li>
+									<a href="knitting-receive-voucher.php">Knitting Receive Voucher</a>
+								</li>
+							</ul>
+						</li>
+						<li class='dropdown-submenu'>
+							<a href="#">Cmt Voucher</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="cmt-knitting-voucher.php">Cmt Knitting Voucher</a>
+								</li>
+								<li>
+									<a href="issue-to-cmt-voucher.php">Issue To Cmt Voucher</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="raw-material-issue-voucher.php">Raw Material Issue</a>
+						</li>
+						<li>
+							<a href="stiching-voucher.php">Stitching Voucher</a>
+						</li>
+						<li>
+							<a href="folding-voucher.php">Folding Voucher</a>
+						</li>
+						<li>
+							<a href="press-voucher.php">Press Voucher</a>
+						</li>
+						<li>
+							<a href="packing-voucher.php">Packing Voucher</a>
+						</li>
+						<li class='dropdown-submenu'>
+							<a href='#'>Dying</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="issue-to-dyeing-finish-voucher.php">Issue To Dying Finish</a>
+								</li>
+								<li>
+									<a href="receive-from-dyeing-finish-voucher.php">Receive From Dying Finish</a>
+								</li>
+							</ul>
+						</li>
+						<li class='dropdown-submenu'>
+							<a href='#'>Rafu</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="issue-to-raffu-voucher.php">Issue To Rafu Voucher</a>
+								</li>
+								<li>
+									<a href="receive-from-raffu-voucher.php">Receive From Rafu Voucher</a>
+								</li>
+							</ul>
+						</li>
+						<li class='dropdown-submenu'>
+							<a href='#'>Inventory</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="inward-gatepass-voucher.php">Inward Gate Pass Voucher</a>
+								</li>
+								<li>
+									<a href="outward-gatepass-voucher.php">Outward Gate Pass Voucher</a>
+								</li>
+							</ul>
+						</li>
+						<li class='dropdown-submenu'>
+							<a href='#'>Accounts</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="cash-receipt-voucher.php">Cash Receipt Voucher</a>
+								</li>
+								<li>
+									<a href="cash-payment-voucher.php">Cash Payment Voucher</a>
+								</li>
+								<li>
+									<a href="bank-receipt-voucher.php">Bank Receipt Voucher</a>
+								</li>
+								<li>
+									<a href="bank-payment-voucher.php">Bank Payment Voucher</a>
+								</li>
+								<li>
+									<a href="journal-voucher.php">Journal Voucher</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span><i class="fa fa-tasks"></i> Payroll</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="add-new-employee.php">Add New Employee</a>
+						</li>
+						<li>
+							<a href="add-new-shift.php">Add New Shift</a>
+						</li>
+						<li>
+							<a href="allot-shift.php">Allot Shifts</a>
+						</li>
+						<li>
+							<a href="add-new-group.php">Add New Groups</a>
+						</li>
+						<li>
+							<a href="loan.php">Loan</a>
+						</li>
+						<li>
+							<a href="over-time.php">Over Time</a>
+						</li>
+						<li>
+							<a href="attendance.php">Attendance</a>
+						</li>
+						<li>
+							<a href="salary-sheet.php">Salary Sheet</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span><i class="fa fa-th"></i> Reports</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<!--........................1....................-->
+						<li class='dropdown-submenu'>
+							<a href="#">Yarn Purchase Report</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="1.1 YARN_REPORT_PARTY_WISE.php">Party Wise Report</a>
+								</li>
+								<li>
+									<a href="1.2 YARN_REPORT_PRODUCT_WISE.php">Product Wise Report</a>
+								</li>
+								<li>
+									<a href="1.3 YARN_REPORT_INVOICE_WISE.php">Invoice Wise Report</a>
+								</li>
+							</ul>
+						</li>
+						<!--..........................2........................-->
+						<li class='dropdown-submenu'>
+							<a href="#">Yarn Purchase Return</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="2.1 YARN_PURCHASE_RETURN_PARTY_WISE.php">Purchase Return Party Wise</a>
+								</li>
+								<li>
+									<a href="2.2 YARN_PURCHASE_RETURN_PRODUCT_WISE.php">Purchase Return Product Wise</a>
+								</li>
+							</ul>
+						</li>
+						<!--........................3.........................-->
+						<li class='dropdown-submenu'>
+							<a href="#">Purchase Raw Material Reports</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="3.1 PURCHASE_RAW_MATERIAL_INVOICE_WISE.php">Invoice Wise</a>
+								</li>
+								<li>
+									<a href="3.2 PURCHASE_RAW_MATERIAL_PRODUCT_WISE.php">Product Wise</a>
+								</li>
+								<li>
+									<a href="3.3 PURCHASE_RAW_MATERIAL_PARTY_WISE.php">Party Wise</a>
+								</li>
+							</ul>
+						</li>
+						<!--.......................4............................-->
+						<li class='dropdown-submenu'>
+							<a href="#">Purchase Return Raw Material Reports</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="4.1 PURCHASE_RETURN_RAW_MATERIAL_PARTY_WISE.php">Party Wise</a>
+								</li>
+								<li>
+									<a href="4.2 PURCHASE_RETURN_RAW_MATERIAL_PRODUCT_WISE.php">Product Wise</a>
+								</li>
+							</ul>
+						</li>
+						<!--.........................5.......................-->
+						<li class='dropdown-submenu'>
+							<a href="#">Yarn Sale Report</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="5.1 YARN_SALE_REPORT_PARTY_WISE.php">Yarn Sale Report Party Wise</a>
+								</li>
+								<li>
+									<a href="5.2 YARN_SALE_REPORT_PRODUCT_WISE.php">Yarn Sale Report Product Wise</a>
+								</li>
+							</ul>
+						</li>
+						<!--.............................6......................-->
+						<li class='dropdown-submenu'>
+							<a href="#">Sale</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="6.1 SALE_PARTY_WISE.php">Sale Party Wise</a>
+								</li>
+								<li>
+									<a href="6.2 SALE_PRODUCT_WISE.php">Sale Product Wise</a>
+								</li>
+								<li>
+									<a href="6.3 SALE_INVOICE_WISE.php">Sale Report Invoice Wise</a>
+								</li>
+								<li>
+									<a href="6.4 SALE_SUMMARY.php">Sale Summary</a>
+								</li>
+							</ul>
+						</li>
+						<!--................................7...................-->
+						<li class='dropdown-submenu'>
+							<a href="#">Sale Return</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="7.1 SALE_RETURN_PARTY_WISE.php">Sale Return Party Wise</a>
+								</li>
+								<li>
+									<a href="7.2 SALE_RETURN_PRODUCT_WISE.php">Sale Return Product Wise</a>
+								</li>
+							</ul>
+						</li>
+						<!--.............................8........................-->
+						<li class='dropdown-submenu'>
+							<a href="#">Yarn Dying Reports</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="8.1 YARN_ISSUE_DYING_WISE.php">Yarn Issue Dying Wise</a>
+								</li>
+								<li>
+									<a href="8.2 YARN_ISSUE_PRODUCT_WISE.php">Yarn Issue Product Wise</a>
+								</li>
+								<li>
+									<a href="8.3 YARN_RECIEVE_DYING_WISE.php">Yarn Receive Dying Wise</a>
+								</li>
+								<li>
+									<a href="8.4 YARN_RECEIVE_PRODUCT_WISE.php">Yarn Receive Product Wise</a>
+								</li>
+							</ul>
+						</li>
+						<!--..............................9...........................-->
+						<li class='dropdown-submenu'>
+							<a href="#">CMT Reports</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="9.1 CMT_ISSUE_PRODUCT_WISE.php">Issue Product Wise</a>
+								</li>
+								<li>
+									<a href="9.2 CMT_ISSUE_PARTY_WISE.php">Issue Party Wise</a>
+								</li>
+								<li>
+									<a href="9.3 CMT_ISSUE_PRODUCT_WISE.php">Issue CMT Product Party</a>
+								</li>
+								<li>
+									<a href="9.4 KNITTING_DATE_WISE.php">Knitting Date Wise</a>
+								</li>
+								<li>
+									<a href="9.5 KNITTING_PRODUCT_ISE.php">Knitting Product Wise</a>
+								</li>
+								<li>
+									<a href="9.6 KNITTING_SUMMARY_REPORT.php">Knitting Summary Report</a>
+								</li>
+								<li>
+									<a href="9.7 KNITTING_PARTY_WISE.php">Knitting Party Wise</a>
+								</li>
+								<li>
+									<a href="9.8 CMT_SUMMARY_REPORT.php">CMT Summary Report</a>
+								</li>
+								<li>
+									<a href="9.9 CMT_KNITTING_PARTY_WEIGHT_WISE.php">CMT Knitting Party Weight Wise</a>
+								</li>
+								<li>
+									<a href="9.10 CMT_KNITTING_PARTY_PRODUCT_WISE.php">Knitting Party Product Weight Wise</a>
+								</li>
+								<li>
+									<a href="9.11 CMT_PRODUCTION_REPORT.php">CMT Production Report</a>
+								</li>
+							</ul>
+						</li>
+						<!--.......................10.............................-->
+						<li class='dropdown-submenu'>
+							<a href="#">Factory Knitting Reports</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="10.1 KNITTING_OPERATOR_WISE.php">Knitting Operator Wise</a>
+								</li>
+								<li>
+									<a href="10.2 KNITTING_SUMMARY_REPORT.php">Knitting Summary Report</a>
+								</li>
+								<li>
+									<a href="10.3 KNITTING_PRODUCT_WISE.php">Knitting Product Wise</a>
+								</li>
+								<li>
+									<a href="10.4 KNITTING_MACHINE_WISE.php">Knitting Machine Wise</a>
+								</li>
+								<li>
+									<a href="10.5 KNITTING_REPORT.php">Knitting Report</a>
+								</li>
+								<li>
+									<a href="10.6 KNITTING_RECEIVE_PRODUCT_WISE.php">Knitting Receive Product Wise</a>
+								</li>
+								<li>
+									<a href="10.7 KNITTING_BALANCE_REPORT.php">Knitting Balance Report</a>
+								</li>
+							</ul>
+						</li>
+						<!--...........................11.........................-->
+						<li class='dropdown-submenu'>
+							<a href="#">Stitching Report</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="11.1 STITCHING_REPORT_DATE_WISE.php">Stitching Report Date Wise</a>
+								</li>
+								<li>
+									<a href="11.2 STITCHING_REPORT_PRODUCT_WISE.php">Stitching Report Product Wise</a>
+								</li>
+								<li>
+									<a href="11.3 STITCHING_REPORT_EMPLOYEE_WISE.php">Stitching Report Employee Wise</a>
+								</li>
+								<li>
+									<a href="11.4 STITCHING_REPORT_SHIFT_WISE.php">Stitching Report Shift Wise</a>
+								</li>
+								<li>
+									<a href="11.5 STITCHING_REPORT_PHASE_WISE.php">Stitching Report Phase Wise</a>
+								</li>
+								<li>
+									<a href="11.6 STITCHING_SUMMARY_REPORT.php">Stitching Summary Report</a>
+								</li>
+							</ul>
+						</li>
+						<!--............................12........................-->
+						<li class='dropdown-submenu'>
+							<a href="#">Folding Reports</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="12.1 FOLDING_REPORT_DATE_WISE.php">Folding Report Date Wise</a>
+								</li>
+								<li>
+									<a href="12.2 FOLDING_REPORT_PRODUCT_WISE.php">Folding Report Product Wise</a>
+								</li>
+								<li>
+									<a href="12.3 FOLDING_REPORT_EMPLOYEE_WISE.php">Folding Report Employee Wise</a>
+								</li>
+								<li>
+									<a href="12.4 FOLDING_REPORT_SHIFT_WISE.php">Folding Report Shift Wise</a>
+								</li>
+								<li>
+									<a href="12.3 FOLDING_REPORT_PHASE_WISE.php">Folding Report Phase Wise</a>
+								</li>
+								<li>
+									<a href="12.5 FOLDING_SUMMARY_REPORT.php">Folding Summary Report</a>
+								</li>
+							</ul>
+						</li>
+						<!--.............................13.....................-->
+						<li class='dropdown-submenu'>
+							<a href="#">Press Reports</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="13.1 PRESS_REPORT_DATE_WISE.php">Press Report Date Wise</a>
+								</li>
+								<li>
+									<a href="13.2 PRESS_REPORT_PRODUCT_WISE.php">Press Report Product Wise</a>
+								</li>
+								<li>
+									<a href="13.3 PRESS_REPORT_EMPLOYEE_WISE.php">Press Report Employee Wise</a>
+								</li>
+								<li>
+									<a href="13.4 PRESS_REPORT_SHIFT_WISE.php">Press Report Shift Wise</a>
+								</li>
+								<li>
+									<a href="13.5 PRESS_REPORT_PHASE_WISE.php">Press Report Phase Wise</a>
+								</li>
+								<li>
+									<a href="13.6 PRESSING_SUMMARY_REPORT.php">Pressing Summary Report</a>
+								</li>
+							</ul>
+						</li>
+						<!--................................14.......................-->
+						<li class='dropdown-submenu'>
+							<a href="#">Rafu Reports</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="14.1 ISSUE_TO_RAFU_PRODUCT_WISE.php">Issue to Rafu Product Wise</a>
+								</li>
+								<li>
+									<a href="14.2 ISSUE_TO_RAFU_WORKER_WISE.php">Issue to Rafu Worker Wise</a>
+								</li>
+								<li>
+									<a href="14.3 RAFU_REPORT_PHASE_WISE.php">Receive from Rafu Product Wise</a>
+								</li>
+								<li>
+									<a href="14.4 RAFU_SUMMARY_REPORT.php">Receive from Rafu Worker Wise</a>
+								</li>
+							</ul>
+						</li>
+						<!--................................15........................-->
+						<li class='dropdown-submenu'>
+							<a href="#">Packing Reports</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="15.1 PACKING_REPORT_DATE_WISE.php">Packing Report Date Wise</a>
+								</li>
+								<li>
+									<a href="15.2 PACKING_REPORT_PRODUCT_WISE.php">Packing Report Product Wise</a>
+								</li>
+								<li>
+									<a href="15.3 PACKING_REPORT_EMPLOYEE_WISE.php">Packing Report Employee Wise</a>
+								</li>
+								<li>
+									<a href="15.4 PACKING_REPORT_SHIFT_WISE.php">Packing Report Shift Wise</a>
+								</li>
+								<li>
+									<a href="15.5 PACKING_REPORT_COLOR_WISE.php">Packing Report Color Wise</a>
+								</li>
+								<li>
+									<a href="15.6 PACKING_REPORT_PHASE_WISE.php">Packing Report Phase Wise</a>
+								</li>
+								<li>
+									<a href="15.7 PACKING_SUMMARY_REPORT.php">Packing Summary Report</a>
+								</li>
+							</ul>
+						</li>
+						<!--..............................16.....................-->
+						<li class='dropdown-submenu'>
+							<a href="#">Finish Dying Reports</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="16.1 FINISH_ISSUE_DYING_PRODUCT_WISE.php">Issue Dying Product Wise</a>
+								</li>
+								<li>
+									<a href="16.2 FINISH_ISSUE_DYING_DYING_WISE.php">Issue Dying Dying Wise</a>
+								</li>
+								<li>
+									<a href="16.3 FINISH_RECEIVE_DYING_PRODUCT_WISE.php">Receive Dying Product Wise</a>
+								</li>
+								<li>
+									<a href="16.4 FINISH_RECEIVE_DYING_DYING_WISE.php">Receive Dying Dying Wise</a>
+								</li>
+								<li>
+									<a href="16.5 FINISH_DYING_BALANCE_REPORT.php">Finish Dying Balance Report</a>
+								</li>
+							</ul>
+						</li>
+						<!--.............................17.......................-->
+						<li class='dropdown-submenu'>
+							<a href="#">Stock Reports</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="17.1 RAW_YARN_STOCK_REPORT.php">Raw Yarn Stock Report</a>
+								</li>
+								<li>
+									<a href="17.2 RAW_YARN_AT_DYING.php">Raw Yarn at Dying</a>
+								</li>
+								<li>
+									<a href="17.3 DYED_YARN.php">Dyed Yarn</a>
+								</li>
+								<li>
+									<a href="17.4 YANT_AT_CMT.php">Yarn at CMT</a>
+								</li>
+								<li>
+									<a href="17.5 YARN_AT_ALL_LOCATIONS.php">Yarn at All Locations</a>
+								</li>
+								<li>
+									<a href="17.6 KNITTED_STOCK_REPORT.php">Knitted Stock Report</a>
+								</li>
+								<li>
+									<a href="17.7 STITCHING_STOCK_REPORT.php">Stitching Stock Report</a>
+								</li>
+								<li>
+									<a href="17.8 FOLDING_STOCK_REPORT.php">Folding Stock Report</a>
+								</li>
+								<li>
+									<a href="17.9 DYING_FINISH_STOCK_REPORT.php">Dying Finish Stock Report</a>
+								</li>
+								<li>
+									<a href="17.10 RAFU_REPORT.php">Rafu Reports</a>
+								</li>
+								<li>
+									<a href="17.11 PRESS_STOCK_REPORT.php">Press Stock Report</a>
+								</li>
+								<li>
+									<a href="17.12 PACKING_STOCK_REPORT.php">Packing Stock Report</a>
+								</li>
+								<li>
+									<a href="17.13 RAW_MATERIAL.php">Raw Material</a>
+								</li>
+								<li>
+									<a href="17.14 FINISH_STOCK_AT_ALL_LOCATIONS.php">Finish Stock at All Locations</a>
+								</li>
+								<li>
+									<a href="17.15 STOCK_REPORT_FINISH_MATERIAL.php">Stock Report Finish Material</a>
+								</li>
+							</ul>
+						</li>
+						<!--...........................18...................-->
+						<li>
+							<a href="18.1 ACCOUNT_LEDGER.php">Account Ledger</a>
+						</li>
+						<!--.............................19....................-->
+						<li>
+							<a href="19.1 DAY_BOOK.php">Day Book</a>
+						</li>
+						<!--..........................20...................-->
+						<li class='dropdown-submenu'>
+							<a href="#">Inward Outward Reports</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="20.1 INWARD_REPORT_PARTY_WISE.php">Inward Report Party Wise</a>
+								</li>
+								<li>
+									<a href="20.2 INWARD_REPORT_BILL_WISE.php">Inward Report Bill Wise</a>
+								</li>
+								<li>
+									<a href="20.3 OUTWARD_REPORT_PARTY_WISE.php">Outward Report Party Wise</a>
+								</li>
+								<li>
+									<a href="20.4 OUTWARD_REPORT_BILL_WISE.php">Outward Report Bill Wise</a>
+								</li>
+								<li>
+									<a href="20.5 INWARD_OUTWARD_BALANCE.php">Inward Outward Balance</a>
+								</li>
+							</ul>
+						</li>
+						<!--..........................21....................-->
+						<li class='dropdown-submenu'>
+							<a href="#">Accounts Reports</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="21.1 CASH_PAYMENT_REPORT.php">Cash Payment Report</a>
+								</li>
+								<li>
+									<a href="21.2 CASH_RECEIPT_REPORT.php">Cash Receipt Report</a>
+								</li>
+								<li>
+									<a href="21.3 CASH_RECEIVE.php">Cash Receive Report</a>
+								</li>
+								<li>
+									<a href="21.4 CASH_RECEIPT_TYPE_REPORT.php">Cash Receipt Type Report</a>
+								</li>
+								<li>
+									<a href="21.5 CASH_RECEIVE_CITY_WISE.php">Cash Receive City Wise</a>
+								</li>
+								<li>
+									<a href="21.6 BANK_REPORT.php">Bank Payment Report</a>
+								</li>
+								<li>
+									<a href="21.7 JOURNAL_VOUCHER_REPORT.php">Bank Receipt Report</a>
+								</li>
+								<li>
+									<a href="21.8 PAYABLE_RECEIEVABLE_REPORT.php">Journal Voucher Report</a>
+								</li>
+								<li>
+									<a href="21.9 DEFAULTERS_REPORT.php">Payabel Receivable</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div><!-- navigation -->
+	</div><!-- container-fluid -->
+	<div class="container-fluid" id="content">
+		<div id="main">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-5">
+						<h2 class="page-title"><i class="fa fa-bars"></i> Sale Voucher</h2>
+					</div>
+					<div class="col-lg-7">
+						<div class="pull-right" style="margin-top:40px;">
+							<a href="#" class="btn btn-success btn-lg"><i class="fa fa-floppy-o" style="font-size:20px;"></i> Save</a>
+							<a href="#" class="btn btn-warning btn-lg"><i class="fa fa-refresh" style="font-size:20px;"></i> Reset</a>
+							<a href="#" class="btn btn-primary btn-lg"><i class="fa fa-print" style="font-size:20px;"></i> Print</a>
+							<a href="#" class="btn btn-danger btn-lg"><i class="fa fa-times" style="font-size:20px;"></i> Delete</a>
+						</div><!-- pull-right -->
+					</div><!-- end of col -->
+				</div><!-- end of row -->
+				<hr>
+				<div class="">
+					<div class="row">
+						<div class="col-sm-12">
+							<form role="form" style="margin-top:-22px;">
+								<div class="form-group">
+									<div class="row">
+										<div class="col-lg-1" style='width:150px;'>
+											<label>Vr#</label>
+											<input class="form-control" type="text">
+										</div>
+										<div class="col-lg-1" style='width:150px;'>
+											<label>Invoice#</label>
+											<input class="form-control" type="text">
+										</div>
+										<div class="col-lg-2">
+											<label>Date</label>
+											<input class="form-control datepick dp" id="date" name="date">
+										</div><!-- end of col -->
+										<div class="col-lg-3">
+											<label>Party Name</label>
+											<select class="form-control amir select2-me">
+												<option>Ring Cutter</option>
+												<option>Wool</option>
+												<option>Polyster</option>
+												<option>Polyster</option>
+											</select>
+										</div>
+									</div><!-- end of row -->
+								</div><!-- form-group -->
+								<div class="form-group">
+									<div class="row">
+										<div class="col-lg-8">
+											<label>Description</label>
+											<input class="form-control" type="text">
+										</div>
+									</div>
+								</div><!-- form-group -->
+							</form><!-- form -->
+							<div class="box-content tab-top-margin">
+								<div class='row '>
+									<div class='col-lg-12'>
+										<form role='form' style='background-color:rgb(138,197,231) !important;'>
+											<div class='form-group'>
+												<div class='row'>
+													<div class='col-lg-1'>
+														<label class='white'>Item#</label>
+														<select class="form-control amir select2-me">
+															<option>1</option>
+															<option>2</option>
+															<option>3</option>
+															<option>4</option>
+														</select>
+													</div>
+													<div class='col-lg-3'>
+														<label class='white'>Product</label>
+														<select class="form-control amir select2-me">
+															<option>White Elastic</option>
+															<option>Black Elastic</option>
+															<option>Polyster</option>
+															<option>Polyster</option>
+														</select>
+													</div>
+													
+													<div class='col-lg-1' style='width:100px;'>
+														<label class='white'>UOM</label>
+														<input type='text' class='form-control'>
+													</div>
+													<div class='col-lg-1' style='width:100px;'>
+														<label class='white'>Quantity</label>
+														<input type='text' class='form-control'>
+													</div>
+													<div class='col-lg-1' style='width:100px;'>
+														<label class='white'>Weight</label>
+														<input type='text' class='form-control'>
+													</div>
+													<div class='col-lg-1' style='width:100px;'>
+														<label class='white'>Rate</label>
+														<input type='text' class='form-control'>
+													</div>
+													<div class='col-lg-1' style='width:140px;'>
+														<label class='white'>Amount</label>
+														<input type='text' class='form-control'>
+													</div>
+													<div class='col-lg-1'>
+														<label class="sr-only">Total</label>
+														<a href="#" style='width:75px;' class="btn btn-primary pad-none"><i class="fa fa-plus" style="font-size:20px;"></i></a>
+													</div><!-- end of col -->
+												</div><!-- end of row-->
+											</div><!-- form-group -->
+										</form><!-- form-->
+									</div><!-- end of col -->
+								</div><!-- end of row -->
+								<div class="row">
+									<div class='col-lg-12'>
+										<div class="table-responsive">
+											<table class="table table-hover table-bordered dataTable">
+												<thead>
+													<tr>
+														<th>Item#</th>
+														<th>Product</th>
+														<th>UOM</th>
+														<th>Quantity</th>
+														<th>Weight</th>
+														<th>Rate</th>
+														<th>Amount</th>
+														<th>Action</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>001</td>
+														<td>Brand</td>
+														<td></td>
+														<td></td>
+														<td>980.98</td>
+														<td>00.0000</td>
+														<td>980.98</td>
+														
+														<td>
+															<a type="button" class="btn btn-primary" style="padding:5px 10px 10px 10px;"><i class="glyphicon-edit"></i></li></a>
+															<a type="button" class="btn btn-danger" style="padding:5px 10px 10px 10px;"><i class="glyphicon-bin"></i></li></a>
+														</td>
+													</tr>
+													<tr>
+														<td>001</td>
+														<td>Brand</td>
+														<td>980.98</td>
+														<td></td>
+														<td>980.98</td>
+														<td>980.98</td>
+														<td>00.0000</td>
+														
+														<td>
+															<a type="button" class="btn btn-primary" style="padding:5px 10px 10px 10px;"><i class="glyphicon-edit"></i></li></a>
+															<a type="button" class="btn btn-danger" style="padding:5px 10px 10px 10px;"><i class="glyphicon-bin"></i></li></a>
+														</td>
+													</tr>
+												</tbody>
+												<tfoot class='bdr-gray'>
+													<td></td>
+													<td></td>
+													<td></td>
+													<td class='red'>Qty:</td>
+													<td></td>
+													<td class='red'>Rate:</td>
+													<td class='red'>Amount:</td>
+													<td></td>
+												</tfoot>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class='row'>
+								<div class='col-lg-12' style='margin-top:10px;'>
+									<div class='panel panel-primary'>
+										<div class='panel-body padd'>
+											<form>
+												<div class='form-group'>
+													<div class='row'>
+														<div class='col-lg-1 red' style='width:160px;'>
+															<label>G.Amount</label>
+															<input type='text' class='form-control sk'>
+														</div>
+														<div class='col-lg-1 red' style='width:100;'>
+															<label>Freight</label>
+															<input type='text' class='form-control sk'>
+														</div>
+														<div class='col-lg-1 red' style='width:100px;'>
+															<label>Discount</label>
+															<input type='text' class='form-control sk'>
+														</div>
+														<div class='col-lg-1 red' style='width:100px;'>
+															<label>Disc%</label>
+															<input type='text' class='form-control sk'>
+														</div>
+														<div class='col-lg-1 red' style='width:140px;'>
+															<label>Tax</label>
+															<input type='text' class='form-control sk'>
+														</div>
+														<div class='col-lg-1 red' style='width:160px;'>
+															<label>Net Amount</label>
+															<input type='text' class='form-control sk' disabled>
+														</div>
+														<div class='col-lg-2 pull-right'>
+															<label class='white'>User</label>
+															<select class="form-control amir select2-me">
+																<option>1</option>
+																<option>2</option>
+																<option>3</option>
+																<option>4</option>
+															</select>
+														</div>
+													</div><!-- end of row -->
+												</div><!-- form-group -->
+											</form><!-- form-->
+										</div><!-- panel-body -->
+									</div><!-- panel-primary -->
+								</div><!-- end of col -->
+							</div><!-- end of row -->
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="pull-right">
+										<a href="#" class="btn btn-success btn-lg"><i class="fa fa-floppy-o" style="font-size:20px;"></i> Save</a>
+										<a href="#" class="btn btn-warning btn-lg"><i class="fa fa-refresh" style="font-size:20px;"></i> Reset</a>
+										<a href="#" class="btn btn-primary btn-lg"><i class="fa fa-print" style="font-size:20px;"></i> Print</a>
+										<a href="#" class="btn btn-danger btn-lg"><i class="fa fa-times" style="font-size:20px;"></i> Delete</a>
+									</div><!-- pull-right -->
+								</div><!--end of col -->
+							</div><!-- end of row -->
+						</div>							
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-38620714-4']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+	</script>
+	<script type="text/javascript">
+	  document.getElementById('date').value = Date();
+	</script>
+</body>
+<!-- Mirrored from www.eakroko.de/flat/forms-basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 26 Aug 2014 06:41:48 GMT -->
+</html>

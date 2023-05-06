@@ -1,0 +1,51 @@
+<?php
+
+	$desc = $this->session->userdata('desc');
+	$desc = json_decode($desc);
+	$desc = objectToArray($desc);
+
+	$vouchers = $desc['vouchers'];
+?>
+
+   txtidupdate" data-txtidupdate='<?php echo $vouchers['subject']['update']; ?>'
+
+  data-insertbtn='<?php echo $vouchers['subject']['insert']; ?>'
+
+ data-deletetbtn='<?php echo $vouchers['course_subject_inf']['delete']; ?>'
+
+
+  data-printtbtn='<?php echo $vouchers['student']['print']; ?>'
+
+
+
+
+
+
+
+   showallupdatebtn
+    data-showallupdatebtn=<?php echo $vouchers['subject']['update']; ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    $('.btnSave').attr('disabled', false);
+    general.setPrivillages();
+
+
+
+    var update = $('.txtidupdate').data('txtidupdate');
+			if (update == 0 ) {
+				$('#searchcash').hide();
+				$('.nav-pills').find('a[href="#searchcash"]').hide();
+			}

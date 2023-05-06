@@ -1,0 +1,29 @@
+
+
+<?php
+/**
+*
+* @ Universal Decoder PHP 5.2
+* @ By Ps2Gamer
+* @ http://decodeby.us
+*
+*/
+
+echo '<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+ <link rel="stylesheet" href="../../assets/css/bootstrap-responsive.min.css">
+ <link rel="stylesheet" href="../../../assets/bootstrap/css/bootstrap.min.css">
+
+ 
+</head>
+<body>
+  <div class="container-fluid">
+        <div class="span12">
+			<img class="rcpt-header"  src="http://cf.alnaharsolution.com/assets/img/pic1.png" alt="" style="width:100%; margin-top:10px;">
+		</div>
+  </div>
+</body>
+</html>';
+?>
